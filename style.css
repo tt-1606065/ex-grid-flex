@@ -1,0 +1,75 @@
+/* RESETS */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* LAYOUT */
+body {
+    display: grid;
+
+    background-color: #EDB5BD;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 0.5fr 1fr;
+
+    gap: 2px;
+
+    grid-template-areas:
+    "cabecalho cabecalho"
+    "aside principal"
+    "rodape rodape";
+
+    padding: 2px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    grid-area: cabecalho;
+    background-color: #A3DFD9;
+}
+
+aside {
+    padding: 10px;
+    text-align: center;
+    grid-area: aside;
+    background-color: #A3DFD9;
+}
+
+main {
+    text-align: center;
+    grid-area: principal;
+    background-color: #A3DFD9;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    grid-area: rodape;
+    background-color: #A3DFD9;
+}
+
+/* COMPONENTES */
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #EDB5BD;
+    gap: 2px;
+}
+
+.flex-linha {
+    display: flex;
+    flex-direction: row;
+    background-color: #ABCFF0;
+    padding: 5px;
+    flex-grow: 1;
+    gap: 5px;
+}
+
+.artigo {
+    padding: 10px;
+    background-color: #A3DFD9;
+    flex-grow: 1;
+}
